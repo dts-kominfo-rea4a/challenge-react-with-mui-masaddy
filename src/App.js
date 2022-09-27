@@ -37,7 +37,7 @@ const App = () => {
         <Grid item xs={6}>
           <Card>
             <Contact data={dataContacts}></Contact>
-          <Button onClick={() => console.log(dataContacts)}>Tsetts</Button>
+          {/* <Button onClick={() => console.log(dataContacts)}>Tsetts</Button> */}
           </Card>
           
         </Grid>
