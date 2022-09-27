@@ -11,28 +11,46 @@ const Contact = (props) => {
 
     // Contact berisi foto, nama, telepon, dan email
     return (
+        <div>
+        { props.data.map((item, index) => (
+            <div key={index}> 
+                <span>{item.name}</span> <br/>
+                <span>{item.phone}</span><br/>
+                <span>{item.email}</span><br/>
+                <span>{item.photo}</span>
 
-        <Table sx={{ maxWidth: 650 }}>
-      <TableHead>
-        <TableRow>
-          <TableCell>Name</TableCell>
-          <TableCell>Phone</TableCell>
-          <TableCell>Email</TableCell>
-          <TableCell>Photo URL</TableCell>
-        </TableRow>
-      </TableHead>
-      <TableBody>
-        {/* Asumsi nama props adalah todos */}
-        {props.data.map((item, index) => (
-          <TableRow key={index}>
-            <TableCell>{item.name}</TableCell>
-            <TableCell>{item.phone}</TableCell>
-            <TableCell>{item.email}</TableCell>
-            <TableCell>{item.photo}</TableCell>
-          </TableRow>
-        ))}
-      </TableBody>
-    </Table>
+            </div>)
+        )}
+        </div>
+
+    //     <Table sx={{ maxWidth: 650 }}>
+    //   <TableHead>
+    //     <TableRow>
+    //       <TableCell>Name</TableCell>
+    //       <TableCell>Phone</TableCell>
+    //       <TableCell>Email</TableCell>
+    //       <TableCell>Photo URL</TableCell>
+    //     </TableRow>
+    //   </TableHead>
+    //   <TableBody>
+        /* Asumsi nama props adalah todos */
+        // {props.data.map((item, index) => (
+        //     <div key={index}> 
+        //         <span>{item.name}</span> <br/>
+        //         <span>{item.phone}</span><br/>
+        //         <span>{item.email}</span><br/>
+        //         <span>{item.photo}</span>
+
+        //     </div>
+        //   <TableRow key={index}>
+        //     <TableCell>{item.name}</TableCell>
+        //     <TableCell>{item.phone}</TableCell>
+        //     <TableCell>{item.email}</TableCell>
+        //     <TableCell>{item.photo}</TableCell>
+        //   </TableRow>
+        // ))}
+    //   </TableBody>
+    // </Table>
     );
 };
 

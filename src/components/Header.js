@@ -9,8 +9,10 @@ import React from 'react';
 const Header = () => {
   return (
     <>
-      <Typography variant="h1">Call a Friend</Typography>
-      <Typography variant="h5">Your friendly contact app</Typography>
+      {/* <Typography variant="h1">Call a Friend</Typography>
+      <Typography variant="h5">Your friendly contact app</Typography> */}
+      <h1>Call a Friend</h1>
+      <h5>Your friendly contact app</h5>
     </>
   );
 };

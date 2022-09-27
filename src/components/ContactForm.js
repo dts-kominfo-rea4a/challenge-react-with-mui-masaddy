@@ -60,8 +60,8 @@ const ContactForm = (props) => {
 
   return (
     <form onSubmit={formOnSubmitHandler}>
-      <Card variant="outlined" sx={{ m: 2, p: 2 }}>
-        <CardContent>
+      {/* <Card variant="outlined" sx={{ m: 2, p: 2 }}>
+        <CardContent> */}
           <TextField
             id="name"
             label="Name*"
@@ -94,13 +94,13 @@ const ContactForm = (props) => {
             value={photo}
             onChange={inputOnChangeHandler}
           />
-        </CardContent>
-        <CardActionArea>
+        {/* </CardContent> */}
+        {/* <CardActionArea> */}
           <Button type="submit" variant="contained" size="large">
             Add New
           </Button>
-        </CardActionArea>
-      </Card>
+        {/* </CardActionArea>
+      </Card> */}
     </form>
   );
 };
